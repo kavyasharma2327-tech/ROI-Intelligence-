@@ -1,0 +1,8 @@
+{
+  "name": "ROI – AI Guided Investment Coach",
+  "description": "Learn behavioral investing, portfolio management, and emotional coaching through real-time market simulations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

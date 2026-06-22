@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+body {
+  background-color: #0a0b0d; /* Immersive UI Deep rich dark background */
+  color: #e1e3e6; /* Soft titanium-silver grey text */
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.3s ease;
+}
+
+/* -------------------------------------------------------------
+   ROI CUSTOMISABLE THEME VARIATIONS (Emerald, Ocean, Amber)
+   ------------------------------------------------------------- */
+
+/* Theme Emerald Forest Overrides */
+.theme-emerald {
+  background-color: #030f09 !important;
+}
+.theme-emerald#roi-app-root,
+.theme-emerald .bg-\[\#0a0b0d\],
+.theme-emerald [id="main-coaching-dashboard"] {
+  background-color: #030f09 !important;
+}
+.theme-emerald .bg-\[\#131722\] {
+  background-color: #0a2215 !important;
+}
+.theme-emerald .bg-\[\#131722\]\/40 {
+  background-color: rgba(10, 34, 21, 0.4) !important;
+}
+.theme-emerald .bg-\[\#1e222d\] {
+  background-color: #123321 !important;
+}
+.theme-emerald .bg-\[\#1e222d\]\/70 {
+  background-color: rgba(18, 51, 33, 0.7) !important;
+}
+.theme-emerald .bg-\[\#1e222d\]\/60 {
+  background-color: rgba(18, 51, 33, 0.6) !important;
+}
+.theme-emerald .border-\[\#2a2e39\],
+.theme-emerald .border-\[\#2a2e39\]\/80,
+.theme-emerald .border-\[\#2a2e39\]\/60,
+.theme-emerald .border-\[\#2a2e39\]\/50,
+.theme-emerald .border-\[\#2a2e39\]\/75,
+.theme-emerald .border-\[\#2a2e39\]\/70 {
+  border-color: #1a442d !important;
+}
+.theme-emerald .text-indigo-400 {
+  color: #10b981 !important;
+}
+.theme-emerald .bg-indigo-600 {
+  background-color: #059669 !important;
+}
+.theme-emerald .hover\:bg-indigo-500:hover,
+.theme-emerald .hover\:bg-indigo-600:hover {
+  background-color: #047857 !important;
+}
+.theme-emerald .bg-indigo-500\/20 {
+  background-color: rgba(16, 185, 129, 0.15) !important;
+  color: #10b981 !important;
+}
+.theme-emerald .bg-indigo-500\/10 {
+  background-color: rgba(16, 185, 129, 0.1) !important;
+  color: #10b981 !important;
+}
+.theme-emerald .border-indigo-500\/30 {
+  border-color: rgba(16, 185, 129, 0.25) !important;
+}
+.theme-emerald .border-indigo-500\/20 {
+  border-color: rgba(16, 185, 129, 0.15) !important;
+}
+.theme-emerald .text-indigo-500 {
+  color: #34d399 !important;
+}
+
+/* Theme Ocean Deep Overrides */
+.theme-ocean {
+  background-color: #020912 !important;
+}
+.theme-ocean#roi-app-root,
+.theme-ocean .bg-\[\#0a0b0d\],
+.theme-ocean [id="main-coaching-dashboard"] {
+  background-color: #020912 !important;
+}
+.theme-ocean .bg-\[\#131722\] {
+  background-color: #081a2e !important;
+}
+.theme-ocean .bg-\[\#131722\]\/40 {
+  background-color: rgba(8, 26, 46, 0.4) !important;
+}
+.theme-ocean .bg-\[\#1e222d\] {
+  background-color: #0d263f !important;
+}
+.theme-ocean .bg-\[\#1e222d\]\/70 {
+  background-color: rgba(13, 38, 63, 0.7) !important;
+}
+.theme-ocean .bg-\[\#1e222d\]\/60 {
+  background-color: rgba(13, 38, 63, 0.6) !important;
+}
+.theme-ocean .border-\[\#2a2e39\],
+.theme-ocean .border-\[\#2a2e39\]\/80,
+.theme-ocean .border-\[\#2a2e39\]\/60,
+.theme-ocean .border-\[\#2a2e39\]\/50,
+.theme-ocean .border-\[\#2a2e39\]\/75,
+.theme-ocean .border-\[\#2a2e39\]\/70 {
+  border-color: #123659 !important;
+}
+.theme-ocean .text-indigo-400 {
+  color: #0ea5e9 !important;
+}
+.theme-ocean .bg-indigo-600 {
+  background-color: #0284c7 !important;
+}
+.theme-ocean .hover\:bg-indigo-500:hover,
+.theme-ocean .hover\:bg-indigo-600:hover {
+  background-color: #0369a1 !important;
+}
+.theme-ocean .bg-indigo-500\/20 {
+  background-color: rgba(14, 165, 233, 0.15) !important;
+  color: #0ea5e9 !important;
+}
+.theme-ocean .bg-indigo-500\/10 {
+  background-color: rgba(14, 165, 233, 0.1) !important;
+  color: #0ea5e9 !important;
+}
+.theme-ocean .border-indigo-500\/30 {
+  border-color: rgba(14, 165, 233, 0.25) !important;
+}
+.theme-ocean .border-indigo-500\/20 {
+  border-color: rgba(14, 165, 233, 0.15) !important;
+}
+.theme-ocean .text-indigo-500 {
+  color: #38bdf8 !important;
+}
+
+/* Theme Retro Amber Overrides */
+.theme-amber {
+  background-color: #0c0802 !important;
+}
+.theme-amber#roi-app-root,
+.theme-amber .bg-\[\#0a0b0d\],
+.theme-amber [id="main-coaching-dashboard"] {
+  background-color: #0c0802 !important;
+}
+.theme-amber .bg-\[\#131722\] {
+  background-color: #190e03 !important;
+}
+.theme-amber .bg-\[\#131722\]\/40 {
+  background-color: rgba(25, 14, 3, 0.4) !important;
+}
+.theme-amber .bg-\[\#1e222d\] {
+  background-color: #261605 !important;
+}
+.theme-amber .bg-\[\#1e222d\]\/70 {
+  background-color: rgba(38, 22, 5, 0.7) !important;
+}
+.theme-amber .bg-\[\#1e222d\]\/60 {
+  background-color: rgba(38, 22, 5, 0.6) !important;
+}
+.theme-amber .border-\[\#2a2e39\],
+.theme-amber .border-\[\#2a2e39\]\/80,
+.theme-amber .border-\[\#2a2e39\]\/60,
+.theme-amber .border-\[\#2a2e39\]\/50,
+.theme-amber .border-\[\#2a2e39\]\/75,
+.theme-amber .border-\[\#2a2e39\]\/70 {
+  border-color: #3b2106 !important;
+}
+.theme-amber .text-indigo-400 {
+  color: #f59e0b !important;
+}
+.theme-amber .bg-indigo-600 {
+  background-color: #d97706 !important;
+}
+.theme-amber .hover\:bg-indigo-500:hover,
+.theme-amber .hover\:bg-indigo-600:hover {
+  background-color: #b45309 !important;
+}
+.theme-amber .bg-indigo-500\/20 {
+  background-color: rgba(245, 158, 11, 0.15) !important;
+  color: #f59e0b !important;
+}
+.theme-amber .bg-indigo-500\/10 {
+  background-color: rgba(245, 158, 11, 0.1) !important;
+  color: #f59e0b !important;
+}
+.theme-amber .border-indigo-500\/30 {
+  border-color: rgba(245, 158, 11, 0.25) !important;
+}
+.theme-amber .border-indigo-500\/20 {
+  border-color: rgba(245, 158, 11, 0.15) !important;
+}
+.theme-amber .text-indigo-500 {
+  color: #fbbf24 !important;
+}
+
+/* Custom scrollbar styling for immersive tradingview feel */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0b0d;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2e39;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3e4456;
+}
+
+/* Text pulse glowing animations */
+@keyframes glow {
+  0%, 100% { opacity: 0.8; filter: drop-shadow(0 0 1px rgba(74, 222, 128, 0.4)); }
+  50% { opacity: 1; filter: drop-shadow(0 0 8px rgba(74, 222, 128, 0.8)); }
+}
+
+.text-glow-emerald {
+  animation: glow 2s infinite ease-in-out;
+}
