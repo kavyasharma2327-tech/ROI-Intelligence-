@@ -48,7 +48,7 @@ export const ROICoach: React.FC<ROICoachProps> = ({ isEmbedded, isFullscreen, wa
     setErrorText(null);
 
     try {
-      const response = await fetch("/api/gemini/coach", {
+      const response = await fetch("https://roi-intelligence.onrender.com/api/gemini/coach", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
